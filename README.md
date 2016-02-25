@@ -1,1 +1,1 @@
-# Magic-EIght-Ball
+# Magic-Eight-Ball
