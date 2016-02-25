@@ -1,0 +1,15 @@
+.container {
+	width: 1280px;
+}
+
+.page-header {
+	margin-top: 0;
+}
+
+#answerspace {
+	position: absolute;
+	bottom: 222px;
+	left: 562px;
+	color: white;
+	width: 100px;
+}
