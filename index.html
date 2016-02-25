@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Magic Eight Ball</title>
-	<!-- Latest compiled and minified CSS & JS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="//code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<title>Magic 8 Ball</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
-	
+	<div class="container">
+		<div class="col-md-12 page-header text-center">
+			<h1>Magic 8 Ball</h1>
+		</div>
+		<div id="question">
+		</div>
+		<div class="col-md-12 text-center">
+			<img style="max-width: 40%" src="assets/images/magic8ball.jpg" alt="magic 8 ball">
+			<div id="answerspace">
+				<p>This is a sample response.</p>
+			</div>
+		</div>
+		<div class="col-md-12 text-center">
+			<form>
+				<input id="input" type="text" placeholder="Ask the Magic 8 Ball"></input>
+				<button type="button" class="btn btn-primary" onclick="eightball()">Ask</button>
+			</form>
+			
+		</div>
+	</div>
 </body>
 </html>
