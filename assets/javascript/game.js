@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 var answers = ["It is certain",
 			"It is decidedly so",
 			"Without a doubt",
@@ -25,25 +24,36 @@ var answers = ["It is certain",
 			"Not with a ten foot pole",
 			"If you have access to antibiotics"];
 
-		var input = document.getElementById("#input").value;
-
-
-function eightball(){
 
 
 
-var random = math.floor((random()* answers.length));
+var eightBall = function() {
 
-$("#answerspace").html("<p>" + answers[random] + "</p>");
-$("#question").html("<p>"+ input + "</p>");
+// generate answer
+//===========================
+var answerId = Math.floor((Math.random()* answers.length));
+//console.log('test');
+userAsk(answerId);
+
+}
+
+// trigger button click
+//======================================
+function userAsk(answerId) {
+$("button").click(function(){
+$("#answerspace").html("<p>" + answers[answerId] + "</p>");
+  //  $("#question").html("<p>"+ input + "</p>");
+//var input = document.getElementById("#input").value;
 
 
+
+});
 };
 
-
-
-
-
-
+//main
+//========================
+$('.btn').click(function() {
+	eightBall();
+});
 
 });
